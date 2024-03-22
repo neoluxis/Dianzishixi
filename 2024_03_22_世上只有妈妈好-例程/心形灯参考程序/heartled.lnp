@@ -1,0 +1,5 @@
+"main.obj",
+"delay.obj",
+"led.obj" 
+TO "heartled" 
+RAMSIZE(256) 
