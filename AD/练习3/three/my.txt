@@ -1,0 +1,16 @@
+Board Information Report
+Filename     : E:\test\three\my.PcbDoc
+Date         : 2024/3/27
+Time         : 10:40:28
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 98.54%
+    Connections, 137
+    Connections routed, 135
+    Connections remaining, 2
+count : 4
+
+Net Via Size, Count
+    50mils, 66
+count : 1
