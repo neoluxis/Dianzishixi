@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\2020ÉÏ¿ÎA\³ÌÐò¿ò¼Ü\ccc.uvproj
+Project File Date:  11/14/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=14.1 xdata=0 code=397
+creating hex file from "201906"...
+"201906" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=14.1 xdata=0 code=397
+creating hex file from "xinlvyi"...
+"xinlvyi" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(89): error C141: syntax error near ';'
+MAIN.C(90): error C141: syntax error near ';'
+MAIN.C(91): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=16.1 xdata=0 code=393
+creating hex file from "xinlvyi"...
+"xinlvyi" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(89): error C141: syntax error near ';'
+MAIN.C(90): error C141: syntax error near ';'
+MAIN.C(91): error C141: syntax error near ';'
+Target not created

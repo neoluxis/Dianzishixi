@@ -1,0 +1,176 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    04/02/2024  09:45:06  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+D:\KEIL_V5\C51\BIN\BL51.EXE main.obj TO heartrateandspeek
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  heartrateandspeek (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         ?DT?MAIN
+            DATA    000DH     0003H     UNIT         _DATA_GROUP_
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0043H     UNIT         ?PR?_SPEEK?MAIN
+            CODE    00D2H     002BH     UNIT         ?PR?_DELAY1MS?MAIN
+            CODE    00FDH     0026H     UNIT         ?PR?MAIN?MAIN
+            CODE    0123H     000EH     UNIT         ?PR?SOUND_RESET?MAIN
+            CODE    0131H     0008H     UNIT         ?PR?SPEEKONE?MAIN
+            CODE    0139H     0005H     UNIT         ?C_INITSEG
+            CODE    013EH     0001H     UNIT         ?PR?SPEEKHEARTRATE?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   heartrateandspeek (MAIN)
+
+
+SEGMENT                           DATA_GROUP 
+  +--> CALLED SEGMENT           START    LENGTH
+-----------------------------------------------
+?C_C51STARTUP                   -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                   000DH    0002H
+  +--> ?PR?_SPEEK?MAIN
+
+?PR?_SPEEK?MAIN                 000FH    0001H
+  +--> ?PR?SOUND_RESET?MAIN
+  +--> ?PR?_DELAY1MS?MAIN
+
+?PR?SOUND_RESET?MAIN            -----    -----
+  +--> ?PR?_DELAY1MS?MAIN
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  04/02/2024  09:45:06  PAGE 2
+
+
+
+
+SYMBOL TABLE OF MODULE:  heartrateandspeek (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:0090H.4       PUBLIC        P1_4
+  B:0090H.5       PUBLIC        P1_5
+  B:0090H.6       PUBLIC        P1_6
+  C:008FH         PUBLIC        _speek
+  C:00DDH         PUBLIC        _delay1ms
+  C:00FDH         PUBLIC        main
+  D:0008H         PUBLIC        bai
+  C:0123H         PUBLIC        sound_reset
+  D:0009H         PUBLIC        shi
+  D:000AH         PUBLIC        heartrate
+  D:000CH         PUBLIC        ge
+  C:0131H         PUBLIC        speekone
+  C:013EH         PUBLIC        speekheartrate
+  -------         PROC          MAIN
+  -------         DO            
+  D:000DH         SYMBOL        idx
+  -------         ENDDO         
+  C:00FDH         LINE#         34
+  C:00FDH         LINE#         35
+  C:0102H         LINE#         36
+  C:0106H         LINE#         37
+  C:011CH         LINE#         38
+  C:0121H         LINE#         39
+  C:0121H         LINE#         40
+  C:0121H         LINE#         53
+  -------         ENDPROC       MAIN
+  -------         PROC          L?0033
+  -------         ENDPROC       L?0033
+  -------         PROC          _DELAY1MS
+  D:0006H         SYMBOL        count
+  -------         DO            
+  D:0004H         SYMBOL        m
+  D:0002H         SYMBOL        n
+  -------         ENDDO         
+  C:00DDH         LINE#         60
+  C:00DDH         LINE#         61
+  C:00DDH         LINE#         63
+  C:00E7H         LINE#         64
+  C:00FCH         LINE#         66
+  -------         ENDPROC       _DELAY1MS
+  -------         PROC          SOUND_RESET
+  C:0123H         LINE#         68
+  C:0123H         LINE#         69
+  C:0123H         LINE#         70
+  C:0125H         LINE#         71
+  C:012CH         LINE#         72
+  C:012EH         LINE#         73
+  -------         ENDPROC       SOUND_RESET
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  04/02/2024  09:45:06  PAGE 3
+
+
+  -------         PROC          _SPEEK
+  D:000FH         SYMBOL        num
+  -------         DO            
+  D:0001H         SYMBOL        i
+  -------         ENDDO         
+  C:008FH         LINE#         76
+  C:0091H         LINE#         77
+  C:0091H         LINE#         78
+  C:0093H         LINE#         79
+  C:0096H         LINE#         80
+  C:0099H         LINE#         81
+  C:00A7H         LINE#         82
+  C:00A7H         LINE#         83
+  C:00BDH         LINE#         84
+  C:00BDH         LINE#         85
+  C:00BDH         LINE#         86
+  C:00BDH         LINE#         87
+  C:00BDH         LINE#         88
+  C:00C0H         LINE#         89
+  C:00C3H         LINE#         90
+  C:00C3H         LINE#         92
+  C:00C3H         LINE#         93
+  C:00CBH         LINE#         94
+  C:00CBH         LINE#         95
+  C:00CBH         LINE#         96
+  C:00CBH         LINE#         97
+  C:00CBH         LINE#         98
+  C:00CEH         LINE#         99
+  C:00D1H         LINE#         100
+  C:00D1H         LINE#         101
+  -------         ENDPROC       _SPEEK
+  -------         PROC          SPEEKONE
+  C:0131H         LINE#         103
+  C:0131H         LINE#         104
+  C:0131H         LINE#         105
+  C:0134H         LINE#         106
+  -------         ENDPROC       SPEEKONE
+  -------         PROC          SPEEKHEARTRATE
+  C:013EH         LINE#         109
+  C:013EH         LINE#         110
+  C:013EH         LINE#         115
+  -------         ENDPROC       SPEEKHEARTRATE
+  -------         ENDMOD        MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SPEEKONE?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SPEEKHEARTRATE?MAIN
+
+Program Size: data=17.0 xdata=0 code=319
+LINK/LOCATE RUN COMPLETE.  2 WARNING(S),  0 ERROR(S)

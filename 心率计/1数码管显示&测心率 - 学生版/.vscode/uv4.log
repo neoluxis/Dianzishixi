@@ -1,0 +1,13 @@
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DISPLAY_ID?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?SPEEKONE?MAIN
+
+Program Size: data=28.3 xdata=0 code=1507
+creating hex file from "xinlvyi"...
+"xinlvyi" - 0 Error(s), 2 Warning(s).
+Build Time Elapsed:  00:00:00
